@@ -29,7 +29,7 @@ const Work = () => {
       initial={{y:-20, opacity:0}}
       whileInView={{y:0, opacity:1}}
       transition={{delay:0.9, duration:0.6}}
-      className='grid grid-cols-auto my-10 gap-5'>
+      className='grid grid-cols-auto sm:grid-cols-3 my-10 gap-5'>
         {workData.map((project,index)=>(
             <motion.a 
             href={project.repositoryUrl}
