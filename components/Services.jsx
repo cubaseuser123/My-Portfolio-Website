@@ -29,7 +29,7 @@ const Services = () => {
       initial={{opacity:0}}
       whileInView={{opacity:1}}
       transition={{duration:0.6, delay:0.9}}
-      className='grid grid-cols-4 gap-6 my-10 flex-row'>
+      className='grid grid-cols-auto gap-6 my-10 flex-row'>
         {serviceData.map(({icon, title, description, link},index)=>(
             <motion.div 
             whileHover={{scale:1.05}}
@@ -37,9 +37,7 @@ const Services = () => {
                 <Image src={icon} alt="" className='w-10'/>
                 <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
                 <p className='text-sm text-gray-600 leading-5'>{description}</p>
-                <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                    Read more <Image src={assets.right_arrow} alt="" className='w-4'/>
-                </a>
+                
             </motion.div>
         ))}
       </motion.div>

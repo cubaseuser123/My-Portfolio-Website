@@ -104,10 +104,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: '🧑‍💻 Front-End Craft', description: 'From layouts to components, I focus on building responsive, accessible, and intuitive front-end interfaces........', link: '' },
-    { icon: assets.mobile_icon, title: '🛠️ Side Projects', description: 'I’ve built several passion projects like PocketPal — designed to solve everyday problems with thoughtful UX........', link: '' },
-    { icon: assets.ui_icon, title: '🎨 Design Thinking', description: 'I enjoy making interfaces that feel good to use — with attention to detail, hierarchy, and visual clarity.......', link: '' },
-    { icon: assets.graphics_icon, title: '🚀 Continuous Learning', description: 'Exploring new libraries, refining workflows, and picking up whatever’s next in the world of web......', link: '' },
+    { icon: assets.web_icon, title: '🧑‍💻 Front-End Craft', description: 'From layouts to components, I focus on building responsive, accessible, and intuitive front-end interfaces', link: '' },
+    { icon: assets.mobile_icon, title: '🛠️ Side Projects', description: 'I’ve built several passion projects like PocketPal — designed to solve everyday problems with thoughtful UX and effective UI', link: '' },
+    { icon: assets.ui_icon, title: '🎨 Design Thinking', description: 'I enjoy making interfaces that feel good to use — with attention to detail, hierarchy, and visual clarity', link: '' },
+    { icon: assets.graphics_icon, title: '🚀 Continuous Learning', description: 'Exploring new libraries, refining workflows, and picking up whatever’s next in the world of web development', link: '' },
 ]
 
 export const infoList = [

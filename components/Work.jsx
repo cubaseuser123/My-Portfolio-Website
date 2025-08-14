@@ -29,7 +29,7 @@ const Work = () => {
       initial={{y:-20, opacity:0}}
       whileInView={{y:0, opacity:1}}
       transition={{delay:0.9, duration:0.6}}
-      className='grid grid-cols-3 my-10 gap-5'>
+      className='grid grid-cols-auto my-10 gap-5'>
         {workData.map((project,index)=>(
             <motion.a 
             href={project.repositoryUrl}
@@ -54,7 +54,7 @@ const Work = () => {
       initial={{opacity:0}}
       whileInView={{opacity:1}}
       transition={{delay:1.1, duration:0.5}}
-      href="" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-purple-200 hover:-translate-y-1 duration-500'>Show more <Image src={assets.right_arrow_bold} alt="Right arrow" className='w-4'/></motion.a>
+      href="https://github.com/cubaseuser123" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-purple-200 hover:-translate-y-1 duration-500'>Show more <Image src={assets.right_arrow_bold} alt="Right arrow" className='w-4'/></motion.a>
     </motion.div>
   )
 }
