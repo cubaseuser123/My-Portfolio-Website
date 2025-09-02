@@ -50,34 +50,49 @@ const Contact = () => {
       transition={{duration:0.5, delay:0.7}}
       className='text-center max-w-2xl mx-auto mt-5 mb-12'>This is my work-portfolio! Explore a collection of projects showcasing my expertise in front-end development</motion.p>
 
-      <motion.form onSubmit={onSubmit} 
-      initial={{opacity:0}}
-      whileInView={{opacity:1}}
-      transition={{duration:0.5, delay:0.9}}
-      className='max-w-2xl mx-auto'>
-        <motion.div 
-        initial={{x:-50,opacity:0}}
+<motion.form onSubmit={onSubmit} 
+  initial={{opacity:0}}
+  whileInView={{opacity:1}}
+  transition={{duration:0.5, delay:0.9}}
+  className='max-w-2xl mx-auto'>
+  <motion.div 
+    initial={{x:-50,opacity:0}}
+    whileInView={{x:0,opacity:1}}
+    transition={{duration:0.6, delay:1.1}}
+    className='flex flex-col md:flex-row gap-4 md:gap-6 mt-10 mb-8'>
+      <motion.input 
+        initial={{x:50,opacity:0}}
         whileInView={{x:0,opacity:1}}
-        transition={{duration:0.6, delay:1.1}}
-        className='flex gap-6 mt-10 mb-8'>
-            <motion.input 
-            initial={{x:50,opacity:0}}
-            whileInView={{x:0,opacity:1}}
-            transition={{duration:0.6, delay:1.2}}
-            type="text"  placeholder='Enter your name' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='name'/>
-            <input type="email"  placeholder='Enter your email' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='email'/>
-        </motion.div>
-        <motion.textarea rows='6' placeholder='Enter your message' required  
-        initial={{y:100,opacity:0}}
-        whileInView={{y:0,opacity:1}}
-        transition={{duration:0.6, delay:1.3}}
-        className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6' name='message'></motion.textarea>
-        <motion.button type='submit' 
-        whileHover={{scale:1.05}}
-        transition={{duration:0.3}}
-        className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500'>Submit Now <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.button>
-        <p className='mt-5'>{result}</p>
-      </motion.form>
+        transition={{duration:0.6, delay:1.2}}
+        type="text"  
+        placeholder='Enter your name' 
+        required 
+        className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white min-w-0' 
+        name='name'
+      />
+      <input 
+        type="email"  
+        placeholder='Enter your email' 
+        required 
+        className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white min-w-0' 
+        name='email'
+      />
+  </motion.div>
+  {/* Add your message field and submit button below */}
+  <textarea
+    name="message"
+    placeholder="Enter your message"
+    required
+    className="w-full p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 min-h-[120px] resize-y"
+  />
+  <button
+  type="submit"
+  className="px-20 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition block mx-auto flex items-center justify-center"
+>
+  Send
+  <div className="mt-4 text-center text-sm text-gray-600">{result}</div>
+  </button>
+</motion.form>
     </motion.div>
   )
 }
