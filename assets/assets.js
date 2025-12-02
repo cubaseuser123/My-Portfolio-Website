@@ -89,17 +89,17 @@ export const workData = [
         repositoryUrl : "https://github.com/cubaseuser123/The-PocketPal-Project"
     },
     {
+        title: 'QuickBlog',
+        description: 'A Online Blog Website',
+        bgImage: '/work-3.png',
+        repositoryUrl : "https://github.com/cubaseuser123/QuickBlog-Online-Blog-Website"
+    },
+    {
         title: 'Finderr',
         description: 'Property finding website',
         bgImage: '/work-2.png',
         repositoryUrl : "https://github.com/cubaseuser123/Finderr-RealEstateProperty-Website-React"
-    },
-    {
-        title: 'Matchem Project',
-        description: 'A friendly student tool',
-        bgImage: '/work-3.png',
-        repositoryUrl : "https://github.com/cubaseuser123/The-Mat-chem-Project"
-    },
+    }
    
 ]
 
